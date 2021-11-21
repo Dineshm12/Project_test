@@ -13,16 +13,16 @@ public class Test_adactin extends Base_Class {
 		File f = new File(
 				"C:\\Users\\Dinesh\\eclipse-workspace\\Hotel\\Project_test\\gittest\\path\\adactin.properties");
 		FileInputStream fi = new FileInputStream(f);
-		Properties p = new Properties();
-		p.load(fi);
-		String url = p.getProperty("url_adactin");
-		String username = p.getProperty("username");
-		String password = p.getProperty("password");
-		String firstname = p.getProperty("firstname");
-		String lastname = p.getProperty("lastname");
-		String billingaddress = p.getProperty("Billingaddress");
-		String creditcardno = p.getProperty("creditcardno");
-		String cvvno = p.getProperty("cvvnumber");
+		Properties prop = new Properties();
+		prop.load(fi);
+		String url = prop.getProperty("url_adactin");
+		String username = prop.getProperty("username");
+		String password = prop.getProperty("password");
+		String firstname = prop.getProperty("firstname");
+		String lastname = prop.getProperty("lastname");
+		String billingaddress = prop.getProperty("Billingaddress");
+		String creditcardno = prop.getProperty("creditcardno");
+		String cvvno = prop.getProperty("cvvnumber");
 //Browser Launch
 		browser("chrome");
 		geturl(url);
