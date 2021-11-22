@@ -14,7 +14,7 @@ public class Adactin extends Base_Class {
 	
 	@Given("^Open the login page$")
 	public void open_the_login_page() throws Throwable {
-		properties("C:\\Users\\Dinesh\\eclipse-workspace\\mainproject\\path\\adactin.properties");
+		properties("C:\\Users\\Dinesh\\eclipse-workspace\\Hotel\\Project_test\\gittest\\path\\adactin.properties");
 		browser("chrome");
 		geturl("http://adactinhotelapp.com/");
 		PageFactory.initElements(driver, Pom.class);
